@@ -7,7 +7,6 @@ libpcap_cflags := \
   -Wno-unused-parameter \
   -D_BSD_SOURCE \
   -D_U_="__attribute__((unused))" \
-  -Werror \
 
 include $(CLEAR_VARS)
 
@@ -22,6 +21,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS += $(libpcap_cflags)
 LOCAL_CFLAGS += -DHAVE_CONFIG_H
+LOCAL_CFLAGS += -DMTK_COUNT_FEATURE
 
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
 

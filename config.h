@@ -278,6 +278,9 @@
 /* target host supports USB sniffing */
 #define PCAP_SUPPORT_USB 1
 
+/* target host supports packet ring*/
+#define PCAP_SUPPORT_PACKET_RING
+
 /* include ACN support */
 /* #undef SITA */
 
